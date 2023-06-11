@@ -109,9 +109,9 @@ TEMPLATES = [
 WSGI_APPLICATION = "archery.wsgi.application"
 
 # Internationalization
-LANGUAGE_CODE = "zh-hans"
-
-TIME_ZONE = "Asia/Shanghai"
+#LANGUAGE_CODE = "zh-hans"
+LANGUAGE_CODE = "en"
+TIME_ZONE = "Etc/UTC"
 
 USE_I18N = True
 
@@ -130,6 +130,7 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = "common.storage.ForgivingManifestStaticFilesStorage"
 
+print(STATICFILES_DIRS)
 # 扩展django admin里users字段用到，指定了sql/models.py里的class users
 AUTH_USER_MODEL = "sql.Users"
 

@@ -9,11 +9,11 @@ function init() {
     echo "Initing archery"
     echo "----------------"
     echo "安装/更新可能缺少的依赖: mysql-community-devel gcc gcc-c++ python-devel"
-    sudo yum install -y epel-release
-    sudo yum install -y mysql-devel gcc gcc-c++ python-devel MySQL-python
-    sudo yum install -y python36 python3-devel python36-pip openldap-devel unixODBC-devel gettext
+    #sudo yum install -y epel-release
+    #sudo yum install -y mysql-devel gcc gcc-c++ python-devel MySQL-python
+    #sudo yum install -y python36 python3-devel python36-pip openldap-devel unixODBC-devel gettext
 
-    python3 -m pip install virtualenv -i https://mirrors.aliyun.com/pypi/simple/
+    #python3 -m pip install virtualenv -i https://mirrors.aliyun.com/pypi/simple/
     if [[ ! -d "venv" ]]; then
         virtualenv --system-site-packages -p python3 venv
     fi
